@@ -1,5 +1,5 @@
 /*---Base Styles---*/
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -7,13 +7,24 @@ body{
     font-family: 'Assistant', sans-serif;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset{
+    border: none;
+}
 /*---Display Styles---*/
 .main-header {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin-bottom: 15px;
     
 }
-.banner{
+
+.main-header h1 {
     background-color: grey;
     color: white;
     width: 100%;
@@ -35,6 +46,46 @@ body{
     color: lightgray;
 
 }
+
+.wrapper{
+    width:60%;
+    margin: auto;
+    background-color: lightgreen;
+    
+}
+
+.first { 
+    border: solid 3px black;
+    margin: 0;
+}
+
+.second {
+    border: solid 2px black;
+    margin-top: 2.5px;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+ }
+
+.info_label{
+    text-align: left;
+}
+
+.info_input{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    width: 80%; 
+}
+
+.third{
+    border: solid 2px black;
+    width:99% ;
+  
+}
+/*---Clearfix---*/
 .group:after {
     content: "";
     display: table;
@@ -44,7 +95,17 @@ body{
 /*---Media queries---*/
 
 @media (min-width: 768px){
+    .information_input{
+        display: flex;
+        flex-direction: row;
+        padding: 5px 0 5px 0;
+        justify-content: space-between;
+        
+    }
 
+    .information label{
+        flex: 0 0 150px;
+    }
 }
 
 @media (min-width: 1024px){
