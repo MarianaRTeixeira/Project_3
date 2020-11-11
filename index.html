@@ -28,7 +28,7 @@
 
         <form action="index.html" method="post">
             
-            <fieldset class="information">
+        <fieldset class="information">
                 <h2>Contact Information</h2>
                 <div class="information_input">
                     <label class="info_label" for="full_name">Full Name</label>
@@ -118,15 +118,37 @@
                     <label class="info_label" for="zip_code">Zip Code</label>
                     <input class="info_input" type="number" id="zip_code" name="zip">
                 </div>
-            </fieldset>
+        </fieldset>
 
-           <hr class="third">
+        <hr class="third">
 
         <fieldset class="newsletter">
             <h2>Newsletter</h2>
-            <h3>Select the newsletters you woyld like to receive</h3>
-            <label for="html">Html</label>
-            <input type="checkbox">
+
+            <div class="selection">
+                <h3>Select the newsletters you woyld like to receive</h3>
+
+                <input type="checkbox" id="html" value="interess_html">
+                <label class="light" for="html">HTML News</label><br>
+
+                <input type="checkbox" id="css" value="interess_css">
+                <label class="light" for="css">CSS News</label><br>
+
+                <input type="checkbox" id="javascript" value="interess_javascript">
+                <label class="light" for="javascript">Javascript news</label>
+            </div>
+
+            <div class="format">
+                <h3>Newsletter format</h3>
+            
+                <input type="radio" id="html_format" value="html_format" name="news_view">
+                <label for="html_format" class="light">HTML</label>
+                <br>
+                <input type="radio" id="plain_format" value="plain_format" name="news_view">
+                <label for="plain_format" class="light">Plain text</label>
+            </div>
+
+
         </fieldset>
         </form>
     </div>

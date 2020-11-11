@@ -85,6 +85,13 @@ fieldset{
     width:99% ;
   
 }
+
+/* --- Input Styles ---- */
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 0 5px 10px 0;
+}
+
 /*---Clearfix---*/
 .group:after {
     content: "";
