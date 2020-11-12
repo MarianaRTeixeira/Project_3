@@ -21,45 +21,46 @@
         <h2>Signup for our newsletter</h2>
         <h3>Get the latest news on how your code is doing right in you inbox</h3>
      </header>
-
-    <div class="wrapper">
+ <div class="wrapper">
         <hr class="first">
         <hr class="second">
 
+       
+            
         <form action="index.html" method="post">
             
         <fieldset class="information">
                 <h2>Contact Information</h2>
                 <div class="information_input">
                     <label class="info_label" for="full_name">Full Name</label>
-                    <input  class="info_input" type="text" id="full_name" name="name" placeholder="Required">
+                    <input  class="info_input" type="text" id="full_name" name="name" placeholder="Required" required>
                 </div>
 
                 <div class="information_input">
                     <label class="info_label" for="user_email">Email Adress</label>
-                    <input class="info_input" type="email" id="user_email" name="email">
+                    <input class="info_input" type="email" id="user_email" name="email" placeholder="Required" required>
                 </div>
 
                 <div class="information_input">
                     <label class="info_label" for="phone_number">Phone Number</label>
-                    <input class="info_input" type="number" id="phone_number" name="number">
+                    <input class="info_input" type="tel" id="phone_number" name="number" placeholder="e.g. (555) 555-5555">
                 </div>
 
                 <div class="information_input">
                     <label class="info_label" for="street_adress">Street Adress</label>
-                    <input class="info_input" type="text" id="street_adress" name="adress">
+                    <input class="info_input" type="text" id="street_adress" name="adress" placeholder="full adress" required>
                 </div>
 
                 <div class="information_input">
                     <label class="info_label" for="city">City</label>
-                    <input class="info_input" type="text" id="city" name="city">
+                    <input class="info_input" type="text" id="city" name="city" placeholder="e.g. New York" >
                 </div>
 
                 <div class="information_input">
                     <label class="info_label" for="state">State</label>
                     <select  class="info_input" id="state" name="state"> 
                         <optgroup label="state"><!--https://www.freeformatter.com/usa-state-list-html-select.html-->
-                        <option value="choose">Choose one bellow</option>
+                        <option value="choose">Choose one</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -116,7 +117,7 @@
                 </div>
                 <div class="information_input">
                     <label class="info_label" for="zip_code">Zip Code</label>
-                    <input class="info_input" type="number" id="zip_code" name="zip">
+                    <input class="info_input" type="number" id="zip_code" name="zip" placeholder=" 5-digit">
                 </div>
         </fieldset>
 
@@ -148,9 +149,21 @@
                 <label for="plain_format" class="light">Plain text</label>
             </div>
 
+            <div class="text_box">
+                <h3>Other topics you'd like to hear about</h3>
+                <textarea id="other" name="other_topics">
+                </textarea>
+            </div>
 
+            <div class="sign_up">
+                <button type="submit">Sign Up</button>
+            </div>
         </fieldset>
+
         </form>
+            <footer>
+                <h4>Copyright The Code Review</h4>
+            </footer>
     </div>
 </body>
 </html>
