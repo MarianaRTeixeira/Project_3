@@ -59,6 +59,9 @@ legend {
     font-size: 1.4em;
     margin-bottom: 10px;
 }
+select{
+    width: 100%;
+}
 
 /*---Display Styles---*/
 .main-header {
@@ -130,7 +133,6 @@ legend {
 #zip_code{
     width:30%;
     margin-right:auto;
-   
 }
 
 /* --- Input Styles ---- */
@@ -144,7 +146,7 @@ input[type="number"],
 input[type="email"],
 input[type="tel"],
 select,
-textarea
+textarea,
 .info_input{
   background: rgba(255,255,255,0.1);
   border: none;
@@ -228,7 +230,7 @@ textarea:hover{
 .wrapper{
         display: flex;
         flex-direction: column;
-        width:60%;
+        width:50%;
         margin: auto;
         background-color: #F5FBFC;   
     }
