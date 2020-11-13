@@ -59,6 +59,7 @@ legend {
     font-size: 1.4em;
     margin-bottom: 10px;
 }
+
 select{
     width: 100%;
 }
@@ -234,7 +235,7 @@ textarea:hover{
 
 }
 @media (min-width: 1024px){
-.wrapper{
+    .wrapper{
         display: flex;
         flex-direction: column;
         width:50%;
