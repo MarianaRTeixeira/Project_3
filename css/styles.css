@@ -24,6 +24,7 @@ textarea{
     width: 100%;
     height: 100px;
     border:none;
+    background-color:#F0F3F4;
 }
 
 button{
@@ -54,6 +55,10 @@ h4{
     opacity: 50%;
 }
 
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
 
 /*---Display Styles---*/
 .main-header {
@@ -85,16 +90,13 @@ h4{
     color: #85929E ;
 }
 
-.wrapper{
-    width:40%;
-    margin: auto;
-    background-color:#E5E7E9  ;   
-}
+
 
 .first { 
     border: solid 2px black;
     margin:auto;
     width: 99%;
+   
 }
 
 .second {
@@ -156,7 +158,6 @@ textarea
   margin-bottom: 30px;
   border-radius: 10px;
   text-align: right;
-
 }
 
 input[type="text"]:focus,
@@ -164,30 +165,28 @@ input[type="number"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 select:focus,
-textarea:focus,
-.info_input:focus{
+textarea:focus {
     border: solid 1px #CA6F1E;
     background-color: #F6DDCC;
-   
-
+    transform: scale(1.1);
 }
 
 input[type="text"]:hover,
 input[type="number"]:hover,
 input[type="email"]:hover,
-input[type="tel"]:hover{
-    border: solid 1px #EB984E ;
-    background-color: #D1F2EB ;
+input[type="tel"]:hover,
+select:hover {
+    border: solid 1px #EB984E;
+    background-color: #D1F2EB;
     transform: scale(1.1);
-    
 }
+
 
 
 textarea:focus, 
 select:focus{
     border: solid 1px #EB984E ;
     background-color: #F6DDCC;
-
 }
 
 textarea:hover{
@@ -209,21 +208,29 @@ textarea:hover{
         display: flex;
         flex-direction: row;
         padding: 5px 0 5px 0;
-        justify-content: space-between;  
-    }
-    .wrapper{
-        width: 60%;
+        justify-content: space-between;
+        
     }
 
     .information label{
-        flex: 0 0 180px;  
+        flex: 0 0 180px;
+        
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        width:80%;
+        margin: auto;
+        background-color: #F5FBFC;   
     }
 
-    #zip_code  {
+}
+@media (min-width: 1024px){
+.wrapper{
         display: flex;
-        flex-direction: row;
-        justify-self: left;
-        max-width: 200px;
-        margin-right: 0;
-      }
+        flex-direction: column;
+        width:60%;
+        margin: auto;
+        background-color: #F5FBFC;   
+    }
 }
