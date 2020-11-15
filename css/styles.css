@@ -168,6 +168,7 @@ textarea,
   text-align: right;
 }
 
+/* --- Input Styles: Focus ---- */
 input[type="text"]:focus,
 input[type="number"]:focus,
 input[type="email"]:focus,
@@ -176,10 +177,20 @@ select:focus,
 textarea:focus {
     border: solid 1px #CA6F1E;
     background-color: #F6DDCC;
-    transform: scale(1.1);
-    transition-duration: 2s;
+    color: #212F3C;
+    transform: scale(1.2);
+    transition: transform 0.5s;
 }
 
+textarea:focus, 
+select:focus{
+    border: solid 1px #EB984E ;
+    background-color: #F6DDCC;
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+/* --- Input Styles: Hover ---- */
 input[type="text"]:hover,
 input[type="number"]:hover,
 input[type="email"]:hover,
@@ -187,21 +198,17 @@ input[type="tel"]:hover,
 select:hover {
     border: solid 1px #EB984E;
     background-color: #D1F2EB;
+    color:#212F3C;
     transform: scale(1.1);
-    transition-duration: 2s;
-}
-
-textarea:focus, 
-select:focus{
-    border: solid 1px #EB984E ;
-    background-color: #F6DDCC;
-    transition-duration: 2s;
+    transition: transform 0.5s;
 }
 
 textarea:hover{
-    border: solid 1px #EB984E ;
-    background-color: #D1F2EB ;
-    transition-duration: 2s;
+    border: solid 1px #EB984E;
+    background-color: #D1F2EB;
+    color:#212F3C;
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
 
 /*---Clearfix---*/
