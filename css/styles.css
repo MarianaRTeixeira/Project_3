@@ -174,6 +174,8 @@ input[type="text"]:focus,
 input[type="number"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
+input[type="checkbox"]:focus,
+input[type="radio"]:focus,
 select:focus,
 textarea:focus {
     border: solid 1px #ca1e1e;
@@ -188,12 +190,17 @@ select:focus{
     border: solid 1px #EB984E ;
     background-color: #F6DDCC;
 }
-
+input[type="checkbox"]:focus,
+input[type="radio"]:focus{
+    outline: 2px solid #ca1e1e;
+}
 /* --- Input Styles: Hover ---- */
 input[type="text"]:hover,
 input[type="number"]:hover,
 input[type="email"]:hover,
 input[type="tel"]:hover,
+input[type="checkbox"]:hover,
+input[type="radio"]:hover,
 select:hover {
     border: solid 1px #EB984E;
     background-color: #D1F2EB;
@@ -208,6 +215,11 @@ textarea:hover{
     color:#212F3C;
     transform: scale(1.1);
     transition: transform 0.5s;
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover{
+    outline: 2px solid #EB984E;
 }
 
 /*---Clearfix---*/
