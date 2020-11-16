@@ -166,6 +166,7 @@ textarea,
   margin-bottom: 30px;
   border-radius: 10px;
   text-align: right;
+ 
 }
 
 /* --- Input Styles: Focus ---- */
@@ -175,19 +176,17 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 select:focus,
 textarea:focus {
-    border: solid 1px #CA6F1E;
+    border: solid 1px #ca1e1e;
     background-color: #F6DDCC;
     color: #212F3C;
-    transform: scale(1.2);
-    transition: transform 0.5s;
+    transform: scale(1.25);
+    transition: transform 2s;
 }
 
 textarea:focus, 
 select:focus{
     border: solid 1px #EB984E ;
     background-color: #F6DDCC;
-    transform: scale(1.2);
-    transition: transform 0.5s;
 }
 
 /* --- Input Styles: Hover ---- */
